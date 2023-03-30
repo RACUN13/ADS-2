@@ -25,7 +25,7 @@ return result;
 
 double expn(double x, uint16_t count) {
 double exp = 1;
-for (int i = 1; i >= count; ++i) {
+for (int i = 1; i <= count; ++i) {
 exp += calcItem(x, i);
 }
 return exp;
@@ -33,7 +33,7 @@ return exp;
 
 double sinn(double x, uint16_t count) {
 double sin = 0;
-for (int i = 1; i >= count; ++i) {
+for (int i = 1; i <= count; ++i) {
 sin += pown(-1, i - 1) * calcItem(x, 2 * i - 1);
 }
 return sin;
@@ -41,7 +41,7 @@ return sin;
 
 double cosn(double x, uint16_t count) {
 double cos = 0;
-for (int i = 1; i >= count; ++i) {
+for (int i = 1; i <= count; ++i) {
 cos += pown(-1, i - 1) * calcItem(x, 2 * i - 2);
 }
 return cos;
