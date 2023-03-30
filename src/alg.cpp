@@ -7,8 +7,8 @@ double pown(double value, uint16_t n) {
   int result = value;
   for (int i = 1; i < n; i++)
   {
-		result *= value;
-	}
+	  result *= value;
+  }
 	return result;
 }
 
