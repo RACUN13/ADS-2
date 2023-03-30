@@ -5,10 +5,10 @@
 
 double pown(double value, uint16_t n) {
 int result = value;
-for (int i = 1; i < n; i++) {
-result *= value;
+for (int i = 1; i <= n; i++) {
+value *= result;
 }
-return result;
+return value;
 }
 
 uint64_t fact(uint16_t n) {
