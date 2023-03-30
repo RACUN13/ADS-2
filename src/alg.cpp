@@ -24,7 +24,7 @@ return(pown(x, n) / fact(n));
 
 double expn(double x, uint16_t count) {
 double exp = 1;
-for (int i = 1; i <= count; ++i) {
+for (int i = 1; i <= count; i++) {
 exp += calcItem(x, i);
 }
 return exp;
@@ -40,7 +40,7 @@ return sin;
 
 double cosn(double x, uint16_t count) {
 double cos = 1;
-for (int i = 2; i <= count; ++i) {
+for (int i = 2; i <= count; i++) {
 cos += pown(-1, i - 1) * calcItem(x, 2 * i - 2);
 }
 return cos;
